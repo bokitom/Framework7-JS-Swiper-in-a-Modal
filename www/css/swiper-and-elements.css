@@ -1,0 +1,386 @@
+
+.purple_back_rad_18_62_pink_reduc { 
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(220,103,242,0) 18%, rgba(220,103,242,0.5) 40%, rgba(180,82,227,0.98) 61%, rgba(177,81,225,1) 62%, rgba(145,76,205,1) 71%, rgba(134,73,200,1) 78%, rgba(79,64,159,1) 92%, rgba(63,61,158,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(220,103,242,0) 18%,rgba(220,103,242,0.5) 40%,rgba(180,82,227,0.98) 61%,rgba(177,81,225,1) 62%,rgba(145,76,205,1) 71%,rgba(134,73,200,1) 78%,rgba(79,64,159,1) 92%,rgba(63,61,158,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(220,103,242,0) 18%,rgba(220,103,242,0.5) 40%,rgba(180,82,227,0.98) 61%,rgba(177,81,225,1) 62%,rgba(145,76,205,1) 71%,rgba(134,73,200,1) 78%,rgba(79,64,159,1) 92%,rgba(63,61,158,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+label.label-checkbox input[type="checkbox"]:checked + .item-media i.icon-form-checkbox,
+label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-checkbox {
+  border: none;
+  background-color: #5a4ec7; /* original blue is #007aff */
+}
+
+.center_outer, .center_left_outer, .center_right_outer {
+    width: 100%;
+    display: flex;
+
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+.f7_height_overide ul {
+    height: 100%!important;
+    padding-left: 0px!important;
+    padding-top: calc(1.8vmin - 6px);
+} 
+
+.modal_listblock {
+    margin: 0;
+}
+
+.modal_title_q {
+    font-size: 20px;
+    color: #5a4ec7;
+    padding: 20px 76px;
+    min-height: 93px;
+}
+
+.modal_title_watermark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: lightgray;
+}
+
+.modal_checkbox {
+    position: absolute!important;
+    right: 21px;
+}
+    .modal_checkbox_p {
+        white-space: normal;
+        width: 88%;
+        color: black;
+        margin: 3px 0px 0px 0px !important;        
+    }
+
+.modal_label_adjust {
+    padding-left: 7px!important;
+}
+
+.game_detail_hexagon_answer_left {
+       
+    background: #5a4ec7;
+    
+    clip-path: polygon(22% 14%, 24% 11%, 27% 9%, 32% 8%, 68% 8%, 73% 9%, 76% 11%, 78% 14%, 96% 45%, 97% 50%, 96% 55%, 78% 86%, 76% 89%, 73% 91%, 68% 92%, 32% 92%, 27% 91%, 24% 89%, 23% 86%, 4% 54%, 3% 50%, 4% 45%);
+   
+    margin-left: 7px;
+    width: 30px;
+    height: 30px;
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+
+.detail_results_tab_title {
+    margin: 0px;
+}
+
+.game_detail_title_results_left,
+.game_detail_title_results_right {
+    height: 45px;
+    padding-top: 9px;
+}
+.game_detail_title_results_left {    
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.game_detail_title_results_right {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.list_cont_likes {
+    height: 100%;    
+    width: 100%;
+    overflow-y: auto;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;     
+}
+
+
+
+.game_detail_location_banner {
+    transform: scale(0);
+    height: 0px;
+    width: 100%;
+    color: #2e7348;
+    background-color: #cff0d9;
+    text-shadow: 0 0 1px #fbfbfd;
+    display: flex !important;
+    justify-content: center;
+    font-family: Avenir-Light;
+
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+    .game_detail_location_span {
+
+        color: #2e7348;
+        text-shadow: 0 0 1px #fbfbfd;
+        background: transparent;
+        border: 1px solid #2e73483b;
+
+        opacity: 1;
+        width: 111px;
+        margin: 6px;
+        font-family: Avenir-Light;
+
+        border-radius: 33px;  
+        line-height: 30px;
+
+        white-space: nowrap;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;   
+    }
+
+.gamer_detail_status_line_icon {
+    position: absolute;
+    top: 0px;
+    left: 0px!important;
+    width: 0.4vmin;
+    height: 100%!important;
+}
+
+
+
+.gamer_detail_status_line_icon {
+    position: absolute;
+    top: 0px;
+    left: 0px!important;
+    width: 0.4vmin;
+    height: 100%!important;
+}
+
+.detail_hexagonal_pic {
+    height: 100%; 
+    width: 100%; 
+    clip-path: polygon(22% 14%, 24% 11%, 27% 9%, 32% 8%, 68% 8%, 73% 9%, 76% 11%, 78% 14%, 96% 45%, 97% 50%, 96% 55%, 78% 86%, 76% 89%, 73% 91%, 68% 92%, 32% 92%, 27% 91%, 24% 89%, 23% 86%, 4% 54%, 3% 50%, 4% 45%); 
+}
+
+.game_detail_matches_text {
+    color: black;
+    text-align: left;
+}
+
+.gamer_item_after_adjust {
+    margin-right: 30px;
+    width: 25%;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+    .gamer_item_after_img {
+        z-index: 7;
+        height: 21px;
+        width: 16px;
+        margin-right: 5px;
+        border-radius: 50%;
+        background-image: url(../images/icon_location_top.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        -webkit-transition: all 0.6s cubic-bezier(0,.68,1,1);
+        -moz-transition: all 0.6s cubic-bezier(0,.68,1,1);
+        -ms-transition: all 0.6s cubic-bezier(0,.68,1,1);
+        -o-transition: all 0.6s cubic-bezier(0,.68,1,1);
+        transition: all 0.6s cubic-bezier(0,.68,1,1);
+    }
+
+.member_alerts_list_cont,
+.member_list_options_cont {
+    z-index: 5;
+    position: absolute;
+    border: 5px solid transparent;
+    top: 3px;
+    right: 0px;
+    width: 34px;
+    height: 34px;
+}
+    .member_list_options_cont:hover {
+        opacity: 0.6;
+    }
+    .member_list_options_cont:active {
+        opacity: 0.1;
+    }
+
+.member_list_options {
+    z-index: 2;    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+    
+    .member_list_options_img {
+        z-index: 1;
+        height: 24px;
+        width: 24px;
+        background-image: url(../images/icon_options_friend.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+.game_detail_matches_text {
+    color: black;
+    text-align: left;
+}
+.game_detail_matches_text_sub {
+    color: black;
+    text-align: left;
+ 
+}
+
+.game_detail_matches_inner {    
+    text-align: left;
+    padding-top: calc(( calc(1.8vw - 1.5px) *0.618) + 9px );
+    padding-bottom: calc(( calc(1.8vw - 1.5px) *0.618) + 9px );
+}
+
+
+.gamer_item_after_adjust {
+    margin-right: 30px;
+    width: 25%;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+    .gamer_item_after_img {
+        z-index: 7;
+        height: 21px;
+        width: 16px;
+        margin-right: 5px;
+        border-radius: 50%;
+        background-image: url(../images/icon_location_top.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        -webkit-transition: all 0.6s cubic-bezier(0,.68,1,1);
+        -moz-transition: all 0.6s cubic-bezier(0,.68,1,1);
+        -ms-transition: all 0.6s cubic-bezier(0,.68,1,1);
+        -o-transition: all 0.6s cubic-bezier(0,.68,1,1);
+        transition: all 0.6s cubic-bezier(0,.68,1,1);
+    }
+
+.game_detail_results_slide_header {
+    transform: scale(0);
+    height: 0px;
+    border-bottom: 0px solid lightgray;
+    padding: 0px;
+    margin: 0px;
+    
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+
+.landing_mini_swiper_button_blue {
+    z-index: 1;
+    font-family: Avenir-Light;
+    margin: 22px 0px 21px 0px;
+    color: #fbfbfd;
+    margin: 0px auto 28px auto;
+ 
+    font-size: 19px;    
+    border: 1.9px solid #fbfbfd;
+    box-shadow: 0 0 3px #ffffff;
+    
+    /*text-shadow: 0 0 7px #fbfbfd;*/
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 43px;
+    height: 10.33vmin !important;
+    max-height: 64px;
+    min-height: 55px;
+    padding-top: 3px;
+    width: 47.1vw !important;
+    max-width: 300px;
+    min-width: 255px;
+    
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.landing_mini_swiper_button_blue {
+    background-color: #3c599b;
+}
+.landing_mini_swiper_button_blue:hover {
+    box-shadow: 0 0 3px #ffffff;
+    background-color: #5a71a5!important; 
+
+    -webkit-transition: all 0.066s ease-out;
+    -moz-transition: all 0.066s ease-out;
+    -o-transition: all 0.066s ease-out;
+    transition: all 0.066s ease-out;
+    
+}
+.landing_mini_swiper_button_blue:active {
+    box-shadow: 0 0 3px #ffffff;
+    background-color: #9090de!important; 
+
+    -webkit-transition: all 0.066s ease-out;
+    -moz-transition: all 0.066s ease-out;
+    -o-transition: all 0.066s ease-out;
+    transition: all 0.066s ease-out;
+    
+}
+
+.landing_mini_swiper_head {
+    font-family: Avenir-Light;
+    font-size: 19px;
+    color: #5a4ec7;
+    text-shadow: 0 0 12px #ffffff;
+    margin: 6px auto 28px auto;
+    max-width: 73%;
+}
+
+.status_online {
+    background-color: #17a817;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.member_alerts_list_cont {
+    z-index: 5;
+    position: absolute;
+    border: 5px solid transparent;
+    top: 3px;
+    right: 0px;
+    width: 34px;
+    height: 34px;
+}
+
+.detail_item_media {
+    width: calc(23.4% - 3%);
+    margin-left: calc(1.5% - 0.5px);
+    margin-right: calc(1.5% - 0.5px);
+}

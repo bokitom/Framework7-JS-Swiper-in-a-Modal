@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <!-- ver 2021-04-17 -->
+    <head>
+        <link rel="stylesheet" type="text/css" href="fonts/fonts_setup.css">
+        <link rel="stylesheet" type="text/css" href="framework7/css142/framework7.ios.colors.min.css">
+        <link rel="stylesheet" type="text/css" href="framework7/css142/framework7.ios.css">
+
+        <meta charset="UTF-8">
+        <title>JS SWIPER IN A MODAL</title>
+        
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+
+        <style>
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="css/swiper-and-elements.css">
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="framework7/js142/framework7.js"></script>        
+        <script type="application/javascript" src="js/modal_code.js"></script>
+    </head>
+
+    <body>
+        <!-- UWRAP -->
+        <div id="uwrap" class="uwrap views">
+            <!-- LANDING UPAGE -->
+            <div id="landing_pages" class="upage vertical-col left view view-main purple_back_rad_18_62_pink_reduc">
+                <div class="pages" style="background: transparent">
+                    <!-- LANDING PAGE -->
+                    <div class="page" style="background: transparent">
+                        <div class="page-content upage-content content-area center_outer" style="background: transparent">
+                                                            
+                            <p class="landing_mini_swiper_head">Hello and welcome</p>
+                            <a onclick="modal_detail()" id="test_button_for_show" class="button landing_mini_swiper_button_blue center_outer" data-uib="framework7/button" data-ver="0">
+                                <span>😃 Open Modal/Swiper</span>
+                            </a>                            
+
+                        </div>
+                    </div>
+                    <!-- LANDING PAGE END -->
+                </div>
+            </div>
+            <!-- LANDING UPAGE -->            
+        </div>
+        <!--END OF UWRAP-->        
+
+        <!-- framework7 scripts -->
+        <script type="application/javascript" src="js/my_app_framework7.js"></script>
+    </body>
+</html>
