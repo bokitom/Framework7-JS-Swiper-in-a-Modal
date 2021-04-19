@@ -284,7 +284,7 @@ function modal_detail() {
     setTimeout(function(){
         detail_group1_height();
         
-        //THIS IS A SIMULATION OF PHP CALLBACK FOR EDUARDO  
+        //THIS IS A SIMULATION OF PHP CALLBACK  
         game_liked_items    = JSON.parse('[{"friend_id":"1","friend_alias":"Sarah","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"},{"friend_id":"4","friend_alias":"Ariana","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"},{"friend_id":"23","friend_alias":"Ivan","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"},{"friend_id":"26","friend_alias":"Chuck","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"}]');
         game_users_template = create_game_users_items_template();
         
