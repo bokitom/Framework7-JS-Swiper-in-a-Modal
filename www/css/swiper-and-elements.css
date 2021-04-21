@@ -67,6 +67,7 @@ label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-check
        
     background: #5a4ec7;
     
+    -webkit-clip-path: polygon(22% 14%, 24% 11%, 27% 9%, 32% 8%, 68% 8%, 73% 9%, 76% 11%, 78% 14%, 96% 45%, 97% 50%, 96% 55%, 78% 86%, 76% 89%, 73% 91%, 68% 92%, 32% 92%, 27% 91%, 24% 89%, 23% 86%, 4% 54%, 3% 50%, 4% 45%);
     clip-path: polygon(22% 14%, 24% 11%, 27% 9%, 32% 8%, 68% 8%, 73% 9%, 76% 11%, 78% 14%, 96% 45%, 97% 50%, 96% 55%, 78% 86%, 76% 89%, 73% 91%, 68% 92%, 32% 92%, 27% 91%, 24% 89%, 23% 86%, 4% 54%, 3% 50%, 4% 45%);
    
     margin-left: 7px;
@@ -112,10 +113,9 @@ label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-check
     transition: all 0.3s ease-out;     
 }
 
-
-
 .game_detail_location_banner {
-    transform: scale(0);
+    /*transform: scale(0);*/
+    opacity: 0;
     height: 0px;
     width: 100%;
     color: #2e7348;
@@ -130,6 +130,8 @@ label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-check
     -o-transition: all 0.7s ease-out;
     transition: all 0.7s ease-out;
 }
+
+
     .game_detail_location_span {
 
         color: #2e7348;
@@ -149,6 +151,22 @@ label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-check
         -webkit-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;   
     }
+
+
+.game_detail_results_slide_header {
+    /*transform: scale(0);*/
+    opacity: 0;
+    height: 0px;
+    border-bottom: 0px solid lightgray;
+    padding: 0px;
+    margin: 0px;
+    
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+
 
 .gamer_detail_status_line_icon {
     position: absolute;
@@ -170,7 +188,8 @@ label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-check
 
 .detail_hexagonal_pic {
     height: 100%; 
-    width: 100%; 
+    width: 100%;
+    -webkit-clip-path: polygon(22% 14%, 24% 11%, 27% 9%, 32% 8%, 68% 8%, 73% 9%, 76% 11%, 78% 14%, 96% 45%, 97% 50%, 96% 55%, 78% 86%, 76% 89%, 73% 91%, 68% 92%, 32% 92%, 27% 91%, 24% 89%, 23% 86%, 4% 54%, 3% 50%, 4% 45%);
     clip-path: polygon(22% 14%, 24% 11%, 27% 9%, 32% 8%, 68% 8%, 73% 9%, 76% 11%, 78% 14%, 96% 45%, 97% 50%, 96% 55%, 78% 86%, 76% 89%, 73% 91%, 68% 92%, 32% 92%, 27% 91%, 24% 89%, 23% 86%, 4% 54%, 3% 50%, 4% 45%); 
 }
 
@@ -288,18 +307,6 @@ label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-check
         transition: all 0.6s cubic-bezier(0,.68,1,1);
     }
 
-.game_detail_results_slide_header {
-    transform: scale(0);
-    height: 0px;
-    border-bottom: 0px solid lightgray;
-    padding: 0px;
-    margin: 0px;
-    
-    -webkit-transition: all 0.7s ease-out;
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
-}
 
 .landing_mini_swiper_button_blue {
     z-index: 1;

@@ -1,3 +1,4 @@
+    
 //full - top to bottom modal
 function modal_detail() {
 
@@ -211,15 +212,9 @@ function modal_detail() {
                     $(".actions-modal-button").eq(1).css("color","#5a4ec7");
                     //check
                     $(".swiper-pagination-detail span").eq(0).css({ 'border-color': 'rgba(90, 78, 199, 0.61)' });
-                    $(".game_detail_title_results_left").css({ 'width': '76.6%', 'border-right': '1px solid lightgray', 'opacity': '1' });
-
-                    $(".game_detail_title_results_right").css({ 'width': 'calc(23.4% - 1px)', 'display': 'flex', '-webkit-flex-direction': 'column', 'flex-direction': 'column', 'align-items': 'center', '-webkit-justify-content': 'center', 'justify-content': 'center', '-webkit-align-content': 'center', 'align-content': 'center','-moz-transition': 'all 0.3s ease-out','-o-transition': 'all 0.3s ease-out','transition': 'all 0.3s ease-out' });
-                    $(".game_detail_location_banner").css({ 'transform': 'scale(0)','height':'0px' });
-
-                    //labels on right slide
-                    $(".game_detail_results_slide_header").css({ 'transform': 'scale(0)','height':'0px','margin':'0px','padding':'0px','border-bottom':'0px solid lightgray' });
                     detail_group1_height();
-
+                    
+                    
                 }
                 if (swiper_detail.activeIndex == 1) {
                     $("#detail_close_and_back_id").text( "Back");
@@ -229,14 +224,9 @@ function modal_detail() {
                     //check location
                     $(".swiper-pagination-detail span").eq(1).css({ 'border-color': 'rgba(90, 78, 199, 0.61)' });
 
-                    $(".game_detail_title_results_left").css({ 'width': '0%', 'border-right': '0px solid lightgray', 'opacity': '0' });
 
-                    $(".game_detail_title_results_right").css({ 'width': '100%' });
-                    $(".game_detail_location_banner").css({ 'transform': 'scale(1)','height':'42px' });
-
-                    //labels on right slide
-                    $(".game_detail_results_slide_header").css({ 'transform': 'scale(1)','height':'28px','margin':'14px 16% 0px','padding':'0px 0px 5px 0px','border-bottom':'1px solid lightgray' });
                     detail_group1_height();
+                    
 
                 }
             },
@@ -245,13 +235,31 @@ function modal_detail() {
                 if (swiper_detail.activeIndex == 0) {
                     $(".swiper-pagination-detail span").css({ 'border-color': 'transparent' });
                     $(".swiper-pagination-detail span").eq(0).css({ 'border-color': '#5a4ec7' });
+                
+                    setTimeout(function(){
+                        $(".game_detail_title_results_left").css({ 'width': '76.6%', 'border-right': '1px solid lightgray', 'opacity': '1' });
+                        $(".game_detail_title_results_right").css({ 'width': 'calc(23.4% - 1px)','height': '60px', 'display': 'flex', '-webkit-flex-direction': 'column', 'flex-direction': 'column', 'align-items': 'center', '-webkit-justify-content': 'center', 'justify-content': 'center', '-webkit-align-content': 'center', 'align-content': 'center','-moz-transition': 'all 0.3s ease-out','-o-transition': 'all 0.3s ease-out','transition': 'all 0.3s ease-out' });
+                        $(".game_detail_location_banner").css({ 'height':'0px','line-height':'0px','opacity':'0' });
+                        //labels on right slide
+                        $(".game_detail_results_slide_header").css({ 'height':'0px','line-height':'0px','border-bottom':'0px solid lightgray' });                
+                    },50);
                 }
                 if (swiper_detail.activeIndex == 1) {
                     $(".swiper-pagination-detail span").css({ 'border-color': 'transparent' });
                     $(".swiper-pagination-detail span").eq(1).css({ 'border-color': '#5a4ec7' });
+                    
+                    setTimeout(function(){
+                        $(".game_detail_title_results_left").css({ 'width': '0%', 'border-right': '0px solid lightgray', 'opacity': '0' });
+                        $(".game_detail_title_results_right").css({ 'width': '100%','height': '60px' });
+                        $(".game_detail_location_banner").css({ 'height':'45px','line-height':'45px','opacity':'1' });
+                        //labels on right slide
+                        $(".game_detail_results_slide_header").css({ 'height':'45px','line-height':'45px','opacity':'1','border-bottom':'1px solid lightgray' });
+                    
+                    },50);
                 }
             }
         });
+        
     },300);
 
     $(".detail_slide1").css("width","76.6%");
@@ -282,21 +290,48 @@ function modal_detail() {
     $('.actions-modal-group').eq(1).css("background","white");
 
     setTimeout(function(){
-        detail_group1_height();
-        
-        //THIS IS A SIMULATION OF PHP CALLBACK  
-        game_liked_items    = JSON.parse('[{"friend_id":"1","friend_alias":"Sarah","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"},{"friend_id":"4","friend_alias":"Ariana","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"},{"friend_id":"23","friend_alias":"Ivan","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"},{"friend_id":"26","friend_alias":"Chuck","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"}]');
-        game_users_template = create_game_users_items_template();
-        
-        game_liked_list = myApp.virtualList("#game_liked_list_id", {
-            items: game_liked_items,
-            template: game_users_template
-        });
-
-        
-    },300);
+        detail_group1_height();                
+        check_and_load_list();
+    },500);
+    
 
     return false;
+}
+
+
+function load_list() {
+    //THIS IS A SIMULATION OF PHP CALLBACK  
+    game_liked_items    = JSON.parse('[{"friend_id":"1","friend_alias":"Sarah","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"},{"friend_id":"4","friend_alias":"Ariana","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"},{"friend_id":"23","friend_alias":"Ivan","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"},{"friend_id":"26","friend_alias":"Chuck","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"}]');
+    game_users_template = create_game_users_items_template();
+
+    game_liked_list = myApp.virtualList("#game_liked_list_id", {
+        items: game_liked_items,
+        template: game_users_template
+    });
+}
+function check_and_load_list() {
+
+    setTimeout(function(){
+        if ( $(".actions-modal.modal-in").css("transform") == "matrix(1, 0, 0, 1, 0, 0)" ){
+            //try 1
+            load_list();
+        }else{
+            setTimeout(function(){
+                 if ( $(".actions-modal.modal-in").css("transform") == "matrix(1, 0, 0, 1, 0, 0)" ){        
+                    //try 2 fail safe
+                    load_list();  
+                 }else{
+                    setTimeout(function(){
+                         if ( $(".actions-modal.modal-in").css("transform") == "matrix(1, 0, 0, 1, 0, 0)" ){        
+                            //try 3 double fail safe
+                            load_list();  
+                         }
+                    },1500);
+                }
+            },1500);
+        }
+    },500);
+
 }
 
 
@@ -349,8 +384,20 @@ function close_modal() {
 }
 
 function detail_switch_worldwide() {
+    
+    //THIS IS A SIMULATION OF PHP CALLBACK  
+    game_liked_items    = JSON.parse('[{"friend_id":"1","friend_alias":"Sarah","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"},{"friend_id":"4","friend_alias":"Ariana","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"},{"friend_id":"23","friend_alias":"Ivan","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"},{"friend_id":"26","friend_alias":"Chuck","friend_status":"X","icon":"empty_list_icon","text":"TEXT","saved_date":"DATE"}]');
+    game_users_template = create_game_users_items_template();
+
+    game_liked_list = myApp.virtualList("#game_liked_list_id", {
+        items: game_liked_items,
+        template: game_users_template
+    });
+    
+    
     $("#game_detail_worldwide_span_id").css({ 'color':'white','text-shadow':'none','background':'#2e7348','border':'1px solid #2e7348','line-height':'30px' });
     $("#game_detail_yourcity_span_id").css({ 'color':'#2e7348','text-shadow':'0 0 1px #fbfbfd','background':'transparent','border':'1px solid #2e73483b','line-height':'30px' });
+    
 }
 
 function detail_switch_yourcity() {
@@ -400,5 +447,6 @@ function detail_group1_height() {
         },50);
 
 }
+
 
 //end of modal_code js
